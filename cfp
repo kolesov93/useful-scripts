@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if [[ $# != 1 ]]; then
+    echo 'Usage: cfp filename'
+    exit
+fi
+
+filename=$(readlink -f $1)
+echo -n "$filename" | xclip
+
+echo "$filename" copied to clipboard >&2
+
