@@ -1,0 +1,4 @@
+cfp:
+	Copy full path to file to clipboard
+	Usage: cfp filename
+
